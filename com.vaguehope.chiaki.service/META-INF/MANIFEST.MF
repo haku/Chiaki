@@ -4,5 +4,4 @@ Bundle-Name: chiaki-service
 Bundle-SymbolicName: com.vaguehope.chiaki.service
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .
 Bundle-Vendor: vaguehope.com
