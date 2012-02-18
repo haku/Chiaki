@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>com.vaguehope.chiaki.service</module>
+		<module>com.vaguehope.chiaki.workbench</module>
 		<module>com.vaguehope.chiaki.rcp</module>
 	</modules>
 

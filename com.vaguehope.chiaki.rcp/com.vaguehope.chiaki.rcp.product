@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="chiaki" uid="com.vaguehope.chiaki.rcp" id="com.vaguehope.chiaki.rcp" application="com.vaguehope.chiaki.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+<product name="chiaki" uid="com.vaguehope.chiaki.rcp" id="com.vaguehope.chiaki.workbench.product" application="com.vaguehope.chiaki.workbench.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
 
    <configIni use="">
    </configIni>
@@ -10,23 +10,46 @@
    </launcherArgs>
 
    <launcher name="chiaki">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
    </launcher>
 
    <vm>
    </vm>
 
    <plugins>
+      <plugin id="ch.qos.logback.classic"/>
+      <plugin id="ch.qos.logback.core"/>
+      <plugin id="ch.qos.logback.slf4j" fragment="true"/>
       <plugin id="com.vaguehope.chiaki.service"/>
+      <plugin id="com.vaguehope.chiaki.workbench"/>
+      <plugin id="javax.transaction" fragment="true"/>
       <plugin id="org.apache.activemq.activemq-core"/>
       <plugin id="org.apache.camel.camel-core"/>
       <plugin id="org.apache.camel.camel-jms"/>
+      <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.core.runtime.compatibility.registry" fragment="true"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.net4j.jms.api"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.slf4j.api"/>
+      <plugin id="org.springframework.beans"/>
       <plugin id="org.springframework.context"/>
+      <plugin id="org.springframework.core"/>
+      <plugin id="org.springframework.jms"/>
+      <plugin id="org.springframework.transaction"/>
    </plugins>
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="0" />
    </configurations>
 
 </product>
