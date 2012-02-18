@@ -1,0 +1,5 @@
+ちあき is a cute little project to demonstrate OSGi, Tycho, Spring, Camel and ActiveMQ working together in harmony.
+Later it will be extended to include:
+- Use of Blueprint
+- Deployment to Karaf
+
