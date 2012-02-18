@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="chiaki" uid="com.vaguehope.chiaki.rcp" id="com.vaguehope.chiaki.rcp" application="com.vaguehope.chiaki.application" version="1.0.0.qualifier" useFeatures="false" includeLaunchers="true">
+
+   <configIni use="">
+   </configIni>
+
+   <launcherArgs>
+   </launcherArgs>
+
+   <launcher name="chiaki">
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+      <plugin id="com.vaguehope.chiaki.service" />
+   </plugins>
+
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.core.osgi" autoStart="true" startLevel="0" />
+   </configurations>
+
+</product>
