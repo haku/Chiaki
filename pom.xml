@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.vaguehope.chiaki</groupId>
 	<artifactId>chiaki</artifactId>
@@ -8,6 +9,9 @@
 
 	<properties>
 		<tycho-version>0.14.0</tycho-version>
+		<spring.version>3.0.6.RELEASE</spring.version>
+		<activemq.version>5.5.1</activemq.version>
+		<camel.version>2.9.0</camel.version>
 	</properties>
 
 	<modules>
@@ -24,18 +28,21 @@
 
 	<build>
 		<plugins>
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
 					<resolver>p2</resolver>
+					<pomDependencies>consider</pomDependencies>
 					<environments>
 						<environment>
 							<os>linux</os>
@@ -45,7 +52,43 @@
 					</environments>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-core</artifactId>
+			<version>${activemq.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-core-osgi</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jms</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
+	</dependencies>
+
 </project>
 
