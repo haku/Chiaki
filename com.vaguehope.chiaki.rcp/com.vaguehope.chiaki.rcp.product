@@ -16,14 +16,17 @@
    </vm>
 
    <plugins>
-      <plugin id="com.vaguehope.chiaki.service" />
+      <plugin id="com.vaguehope.chiaki.service"/>
+      <plugin id="org.apache.activemq.activemq-core"/>
+      <plugin id="org.apache.camel.camel-core"/>
+      <plugin id="org.apache.camel.camel-jms"/>
+      <plugin id="org.springframework.context"/>
    </plugins>
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.app" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.core.osgi" autoStart="true" startLevel="0" />
    </configurations>
 
 </product>
