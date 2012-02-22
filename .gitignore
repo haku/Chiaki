@@ -1,11 +1,4 @@
 .project
 .settings
-com.vaguehope.chiaki.service/.settings
-com.vaguehope.chiaki.service/bin
-com.vaguehope.chiaki.service/target
-com.vaguehope.chiaki.rcp/.settings
-com.vaguehope.chiaki.rcp/bin
-com.vaguehope.chiaki.rcp/target
-com.vaguehope.chiaki.workbench/.settings
-com.vaguehope.chiaki.workbench/bin
-com.vaguehope.chiaki.workbench/target
+.classpath
+target
