@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: chiaki-log
+Bundle-SymbolicName: com.vaguehope.chiaki.log
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: vaguehope.com
+Fragment-Host: ch.qos.logback.classic

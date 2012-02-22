@@ -24,6 +24,7 @@
       <plugin id="ch.qos.logback.core"/>
       <plugin id="ch.qos.logback.slf4j" fragment="true"/>
       <plugin id="com.vaguehope.chiaki.hacks"/>
+      <plugin id="com.vaguehope.chiaki.log" fragment="true"/>
       <plugin id="com.vaguehope.chiaki.service"/>
       <plugin id="com.vaguehope.chiaki.workbench"/>
       <plugin id="javax.transaction" fragment="true"/>
