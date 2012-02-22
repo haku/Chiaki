@@ -5,6 +5,7 @@ Bundle-SymbolicName: com.vaguehope.chiaki.service
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: vaguehope.com
+Bundle-Activator: com.vaguehope.chiaki.service.Activator
 Import-Package: org.osgi.framework,
  org.springframework.context,
  javax.jms,

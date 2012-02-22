@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>com.vaguehope.chiaki.service</module>
+		<module>com.vaguehope.chiaki.hacks</module>
 		<module>com.vaguehope.chiaki.workbench</module>
 		<module>com.vaguehope.chiaki.rcp</module>
 	</modules>
@@ -70,6 +71,18 @@
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-core</artifactId>
 			<version>${activemq.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-j2ee-management_1.1_spec</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>kahadb</artifactId>
+			<version>5.5.1</version>
 		</dependency>
 
 		<dependency>

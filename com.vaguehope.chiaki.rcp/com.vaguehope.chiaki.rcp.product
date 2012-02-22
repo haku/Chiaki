@@ -23,13 +23,16 @@
       <plugin id="ch.qos.logback.classic"/>
       <plugin id="ch.qos.logback.core"/>
       <plugin id="ch.qos.logback.slf4j" fragment="true"/>
+      <plugin id="com.vaguehope.chiaki.hacks"/>
       <plugin id="com.vaguehope.chiaki.service"/>
       <plugin id="com.vaguehope.chiaki.workbench"/>
       <plugin id="javax.transaction" fragment="true"/>
       <plugin id="org.apache.activemq.activemq-core"/>
+      <plugin id="org.apache.activemq.kahadb"/>
       <plugin id="org.apache.camel.camel-core"/>
       <plugin id="org.apache.camel.camel-jms"/>
       <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.geronimo.specs.geronimo-j2ee-management_1.1_spec"/>
       <plugin id="org.eclipse.core.contenttype"/>
       <plugin id="org.eclipse.core.jobs"/>
       <plugin id="org.eclipse.core.runtime"/>

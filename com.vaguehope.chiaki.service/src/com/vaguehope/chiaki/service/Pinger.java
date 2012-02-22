@@ -27,7 +27,7 @@ public class Pinger extends TimerTask {
 
 	@Override
 	public void run () {
-		this.producerTemplate.sendBody("example.foo", "desu~");
+		this.producerTemplate.sendBody("activemq:topic:example.foo", "desu~");
 	}
 
 }

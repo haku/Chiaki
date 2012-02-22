@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: chiaki-hacks
+Bundle-SymbolicName: com.vaguehope.chiaki.hacks
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: vaguehope.com
+Require-Bundle: system.bundle
+Export-Package: javax.annotation; version=1.0.0
