@@ -5,12 +5,16 @@ Bundle-SymbolicName: com.vaguehope.chiaki.service
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-Vendor: vaguehope.com
-Bundle-Activator: com.vaguehope.chiaki.service.Activator
-Import-Package: javax.jms,
+Bundle-Module: com.vaguehope.chiaki.service.Config
+Import-Package: com.google.inject,
+ javax.jms,
  org.apache.activemq,
  org.apache.camel,
  org.apache.camel.component.jms,
  org.apache.camel.impl,
+ org.apache.camel.guice,
+ org.ops4j.peaberry,
+ org.ops4j.peaberry.util,
  org.osgi.framework,
  org.slf4j,
  org.springframework.context

@@ -50,10 +50,16 @@
       <plugin id="org.springframework.core"/>
       <plugin id="org.springframework.jms"/>
       <plugin id="org.springframework.transaction"/>
+      <plugin id="com.springsource.org.aopalliance"/>
+      <plugin id="com.google.inject"/>
+      <plugin id="org.ops4j.peaberry"/>
+      <plugin id="org.apache.camel.camel-guice"/>
+      <plugin id="org.guiceyfruit.guiceyfruit-core"/>
    </plugins>
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.ops4j.peaberry" autoStart="true" startLevel="0" />
    </configurations>
 
 </product>
