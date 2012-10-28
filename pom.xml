@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.14.0</tycho-version>
+		<tycho-version>0.16.0</tycho-version>
 		<spring.version>3.0.6.RELEASE</spring.version>
 		<activemq.version>5.5.1</activemq.version>
 		<camel.version>2.9.0</camel.version>
