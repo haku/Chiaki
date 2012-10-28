@@ -129,6 +129,12 @@
 			<version>1.9.5</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-test</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+
 	</dependencies>
 
 </project>

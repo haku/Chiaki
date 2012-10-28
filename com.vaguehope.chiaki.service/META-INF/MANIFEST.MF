@@ -9,8 +9,10 @@ Bundle-Activator: com.vaguehope.chiaki.service.Activator
 Import-Package: javax.jms,
  org.apache.activemq,
  org.apache.camel,
+ org.apache.camel.builder,
  org.apache.camel.component.jms,
  org.apache.camel.impl,
+ org.apache.camel.model,
  org.osgi.framework,
  org.slf4j,
  org.springframework.context
