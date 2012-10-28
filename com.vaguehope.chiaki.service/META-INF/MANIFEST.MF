@@ -14,3 +14,4 @@ Import-Package: javax.jms,
  org.osgi.framework,
  org.slf4j,
  org.springframework.context
+Export-Package: com.vaguehope.chiaki.service

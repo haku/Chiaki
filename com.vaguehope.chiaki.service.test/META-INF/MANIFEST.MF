@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: chiaki-service-test
+Bundle-SymbolicName: com.vaguehope.chiaki.service.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: vaguehope.com
+Require-Bundle: org.junit;bundle-version="[4.0.0,5.0.0)",
+ com.vaguehope.chiaki.service,
+ org.apache.camel.camel-core,
+ org.mockito.mockito-all
