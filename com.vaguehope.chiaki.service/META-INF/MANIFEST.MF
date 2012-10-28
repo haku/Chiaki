@@ -13,6 +13,7 @@ Import-Package: javax.jms,
  org.apache.camel.component.jms,
  org.apache.camel.impl,
  org.apache.camel.model,
+ org.apache.camel.spi,
  org.osgi.framework,
  org.slf4j,
  org.springframework.context
