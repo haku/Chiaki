@@ -3,3 +3,9 @@ Later it will be extended to include:
 - Use of Blueprint
 - Deployment to Karaf
 
+== References ==
+
+* http://wiki.eclipse.org/Tycho/Reference_Card
+* https://camel.apache.org/routes.html
+* https://camel.apache.org/camel-test.html
+* https://camel.apache.org/mock.html
