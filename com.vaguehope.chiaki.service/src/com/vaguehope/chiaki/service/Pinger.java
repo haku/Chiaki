@@ -9,16 +9,16 @@ import org.slf4j.LoggerFactory;
 
 public class Pinger extends TimerTask {
 
-	private static final String ENDPOINT_URL = "activemq:topic:example.foo";
+	private static final String ENDPOINT_URL = "activemq:topic:chiaki.ping";
 
 	private static final long DELAY = 10L * 1000L; // 10 seconds.
 
 	private static final Logger LOG = LoggerFactory.getLogger(Pinger.class);
-	
+
 	private final Timer timer = new Timer();
 
 	private final ProducerTemplate producerTemplate;
-	
+
 	public Pinger (ProducerTemplate producerTemplate) {
 		this.producerTemplate = producerTemplate;
 	}

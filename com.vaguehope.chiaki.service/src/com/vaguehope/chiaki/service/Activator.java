@@ -21,6 +21,7 @@ public class Activator implements BundleActivator {
 	private static final Logger LOG = LoggerFactory.getLogger(Activator.class);
 
 	private CamelContext camelContext;
+	private Pinger pinger;
 
 	@Override
 	public void start (BundleContext context) throws Exception {
@@ -30,11 +31,17 @@ public class Activator implements BundleActivator {
 
 		this.camelContext.addRoutes(new AbRouter());
 
+		this.pinger = new Pinger(this.camelContext.createProducerTemplate());
+		this.pinger.start();
+
 		LOG.info("Service started.");
 	}
 
 	@Override
 	public void stop (BundleContext context) throws Exception {
+		this.pinger.dispose();
+		this.pinger = null;
+
 		this.camelContext.stop();
 		this.camelContext = null;
 
